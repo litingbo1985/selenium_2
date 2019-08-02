@@ -2,12 +2,12 @@ import unittest
 from common import HTMLTestRunner_cn
 #用例路径
 #匹配规则
-casePath = "D:\soft\\web_auto\\case"
+casePath = "D:\soft\\web_test\\workspace\\web_auto_0802\\web_auto\\case"
 rule = "test*.py"
 discover = unittest.defaultTestLoader.discover(start_dir=casePath,pattern=rule)
 # discover = unittest.defaultTestLoader.discover()
 print(discover)
-reportPath = "D:\soft\\web_auto\\report\\"+"result.html"
+reportPath = "D:\soft\\web_test\\workspace\\web_auto_0802\\web_auto\\report\\"+"result.html"
 fp = open(reportPath,"wb")
 runner = HTMLTestRunner_cn.HTMLTestRunner(stream=fp,
                                        title="报告的title",
